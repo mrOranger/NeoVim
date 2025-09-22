@@ -4,7 +4,7 @@ return {
         config = function ()
             require("lualine").setup({
                 options = {
-                    theme = "gruvbox",
+                    theme = "github",
                     icons_enabled = true,
                 },
                 sections = {
