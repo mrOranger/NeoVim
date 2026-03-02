@@ -60,7 +60,9 @@ if [ "$INSTALL_NEEDED" = true ]; then
     curl -LO "$DOWNLOAD_URL"
 
     sudo rm -rf /opt/nvim
+    sudo rm -rf /usr/local/bin/nvim
     sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+    sudo ln -s /opt/nvim-linux-x86_64/bin/nvim /usr/local/bin/nvim
 
     cd -
     rm -rf "$TMP_DIR"
